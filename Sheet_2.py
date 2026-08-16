@@ -33,3 +33,20 @@ elif (31<=temp<=60):
     print("it is hot")
 else:
     print("Temperature is not in range, please reenter in the range")
+
+#tocheck whether a charctwr is vowel or consonant
+char = input("Enter a character form (A-Z): ").lower()  # char is not inbuilt in python , it is string with character of length 1
+if char in ["a","e","i","o","u"]:
+    print("TEXT ENTERED IS A VOWEL")
+else:
+    print("TEXT ENTERED IS A CONSONANT") 
+
+#TO check whether a charcater is uppercase ,lower case, digit or special character
+charc = input("ENTER CHARACTER TO BE EVALUATED: ")
+if "A"<= charc <="Z"or"a"<= charc <="z":   #can be simplified using isalpha(),isdigit()
+    print("TEXT IS ALPHABET")
+elif "0"<= charc <="9":
+    print("TEXT IS NUMBER")
+else:
+    print("TEXT IS SPECIAL CHARACTER")
+
